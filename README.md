@@ -8,7 +8,7 @@ Post comments have to be verified by the poster.
 ### Objectives:
 - [ ] Make the Author and Post data objects
 - [ ] Make the comment data objects
-- [ ] Do a simply styled client UI with simple UX
+- [X] (In Progress) Do a simply styled client UI with simple UX
 - [ ] Add the anonymous comment UI (a simple input box and button)
 
 ## Building, Testing, Trying the Project
@@ -19,3 +19,10 @@ Change into the project directory
 
 >Build the project by executing in the console `dotnet build`
 
+>Change into the ClientApp directory `cd ClientApp`\
+and start the angular client app with `npm start`
+
+### Notes about state of the project
+Currently focusing on the client angular side since
+its where i need to practice more, and later will
+start handling the ASP API side
