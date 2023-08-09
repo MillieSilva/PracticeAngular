@@ -2,6 +2,8 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  font-size: x-large;
+  color: honeydew;
 }
 
 html {
@@ -16,3 +18,15 @@ html {
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
+
+nav {
+  background-image: url("../../assets/images/IMG_20230809_090324.jpg");
+  border-bottom: crimson;
+  border-bottom-style: dashed;
+}
+
+.router-link {
+  font-size: x-large;
+  color: pink;
+}
+
