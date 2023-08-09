@@ -6,12 +6,12 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  posts: Post[] = [
-    {id: 1, name: "Test post", author: "Millie"},
-    {id: 2, name: "A little apricot grows", author: "Millie"},
-    {id: 3, name: "Lettuces become flowers", author: "Millie"},
-    {id: 4, name: "Growing Coriander", author: "Millie"},
-    {id: 5, name: "Another test post", author: "Millie"},
+  posts: PostRM[] = [
+    {id: 1, name: "Test post", author: "Redacted"},
+    {id: 2, name: "A little apricot grows", author: "Redacted"},
+    {id: 3, name: "Lettuces become flowers", author: "Redacted"},
+    {id: 4, name: "Growing Coriander", author: "Redacted"},
+    {id: 5, name: "Another test post", author: "Redacted"},
   ]
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   }
 }
 
-interface Post {
+export interface PostRM {
   id: number,
   name: string,
   author: string

@@ -4,6 +4,7 @@ a.navbar-brand {
   word-break: break-all;
   font-size: x-large;
   color: honeydew;
+  text-shadow: 1px 1px 1px black;
 }
 
 html {
@@ -21,12 +22,21 @@ html {
 
 nav {
   background-image: url("../../assets/images/IMG_20230809_090324.jpg");
-  border-bottom: crimson;
-  border-bottom-style: dashed;
+  background-size: cover;
+  /* border-bottom: 10px dashed crimson; */
 }
 
 .router-link {
   font-size: x-large;
-  color: pink;
+  color: darkblue;
+  text-shadow: 2px 2px 1px black;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

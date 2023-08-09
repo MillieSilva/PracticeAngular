@@ -1,12 +1,14 @@
-<h3 class="text-md-start m-5">Recent posts</h3>
+<h3 class="recent_title text-md-start m-5">Recent posts</h3>
 
 <div class="m-5 d-lg-grid gap-3">
   <div class="row">
     <div *ngFor="let post of posts" class="col-md-4">
       <div class="#post_card card border-0 rounded-1 m-3">
-        <img src="assets/images/IMG_20230809_090350.jpg" alt="Post Image" width="320" height="200">
-        <h2>{{post.name}}</h2>
-        <h6 class="fw-semibold">by {{post.author}}</h6>
+        <img class="user-select-none" src="assets/images/IMG_20230809_090350.jpg"
+             alt="Post Image" width="320" height="200"
+        >
+        <h2 class="post_title">{{post.name}}</h2>
+        <h6 class="fw-semibold">📔 by {{post.author}}</h6>
       </div>
     </div>
   </div>

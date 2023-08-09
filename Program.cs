@@ -1,8 +1,17 @@
+using Microsoft.OpenApi.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddSwaggerGen(
+    c => c.AddServer(new OpenApiServer
+    {
+        // TODO: Url should be fetched from launchSettings.json instead of repeated here
+        Description = "Development Server", Url = "https://localhost:7070/" 
+    })
+);
 
 var app = builder.Build();
 
@@ -23,5 +32,7 @@ app.MapControllerRoute(
     pattern: "{controller}/{action=Index}/{id?}");
 
 app.MapFallbackToFile("index.html");;
+
+app.UseSwagger().UseSwaggerUI();
 
 app.Run();

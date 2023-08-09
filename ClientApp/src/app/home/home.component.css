@@ -1,3 +1,13 @@
 #post_card {
+  position: relative;
   background-color: bisque;
 }
+
+.post_title {
+  color: rgba(205, 92, 92, 0.77);
+}
+
+.recent_title {
+  color: indianred;
+}
+
