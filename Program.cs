@@ -26,6 +26,8 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 app.UseRouting();
 
+// TODO: Likely temporary
+// app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin())
 
 app.MapControllerRoute(
     name: "default",

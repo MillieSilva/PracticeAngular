@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { AppComponent } from './components/app.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { HomeComponent } from './components/home/home.component';
+import { FetchDataComponent } from './components/fetch-data/fetch-data.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { PostComponent } from "./components/post/post.component";
+
 import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
@@ -16,7 +18,8 @@ import {NgOptimizedImage} from "@angular/common";
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
+    PostsComponent,
+    PostComponent,
     FetchDataComponent
   ],
     imports: [
@@ -25,7 +28,8 @@ import {NgOptimizedImage} from "@angular/common";
         FormsModule,
         RouterModule.forRoot([
             {path: '', component: HomeComponent, pathMatch: 'full'},
-            {path: 'counter', component: CounterComponent},
+            {path: 'posts', component: PostsComponent},
+            {path: 'post/:id', component: PostComponent},
             {path: 'fetch-data', component: FetchDataComponent},
         ]),
         NgOptimizedImage

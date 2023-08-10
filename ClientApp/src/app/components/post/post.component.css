@@ -1,0 +1,12 @@
+.title {
+  color: indianred;
+}
+
+.author_label {
+  color: indianred;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+}

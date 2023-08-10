@@ -1,19 +1,22 @@
+import { PostsComponent } from './posts.component';
+
+
+// TODO: If tests are necessary to exist, move them to a clear module name
+/*
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CounterComponent } from './counter.component';
-
 describe('CounterComponent', () => {
-  let fixture: ComponentFixture<CounterComponent>;
+  let fixture: ComponentFixture<PostsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CounterComponent ]
+      declarations: [ PostsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CounterComponent);
+    fixture = TestBed.createComponent(PostsComponent);
     fixture.detectChanges();
   });
 
@@ -32,3 +35,4 @@ describe('CounterComponent', () => {
     expect(countElement.textContent).toEqual('1');
   }));
 });
+*/
